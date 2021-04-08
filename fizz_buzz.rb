@@ -1,12 +1,12 @@
 def fizz_buzz(number)
-  if fizz_buzz = number / 3
-    puts "Fizz"
-  elsif fizz_buzz = number / 5
-    puts "Buzz"
-  elsif fizz_buzz = number / 15
-    puts "FizzBuzz"
+  if number % 15 == 0
+    puts "FizzBuzz"　　#puts不要
+  elsif number % 3 == 0
+    puts "Fizz"   #puts不要
+  elsif number % 5 == 0
+    puts "Buzz" #puts不要
   else
-    puts "number=#{number}"
+    number.to_s    #puts "number=#{number}"
   end
 end
 
